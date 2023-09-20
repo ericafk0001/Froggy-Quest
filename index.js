@@ -17,3 +17,11 @@ function animate() {
 }
 
 animate();
+
+window.addEventListener("keydown", (event) => {
+  switch (event.key) {
+    case "w":
+      if (froggy.velocity.y === 0) froggy.velocity.y = -20;
+      break;
+  }
+});
